@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".a5">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/url"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/entry"
+                android:layout_span="3"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:hint="@string/intoduce_direciion_web"
+
+                android:inputType="text"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#0000FF" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/cancel"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_column="2"
+                android:backgroundTint="@color/white"
+                android:text="@string/cancelar"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/ok"
+                style="?android:attr/buttonBarButtonStyle"
+                android:backgroundTint="@color/white"
+                android:text="@string/ok"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dp"
+            android:background="#0000ff" />
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
